@@ -1,0 +1,12 @@
+<h1>Game</h1>
+<%= @grid %>
+<br />
+<br />
+
+<form action="/score">
+  <label for="question">Enter a word</label>
+  <input type="text" name="word">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="submit" value="Go on!">
+</form>
